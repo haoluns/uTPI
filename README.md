@@ -3,6 +3,7 @@ R codes to implement the utility-based toxicity probability interval design for 
 # Description
 We propose a utility-based toxicity probability interval (uTPI) design for finding the optimal biological dose (OBD) in phase I/II trials. The proposed design accounts for both toxicity and efficacy outcomes, and uses quasi-binomial likelihood to simplify the modeling of utility. The dose-assigment decisions of the uTPI design are adaptively made by maximizing the toxicity--efficacy tradeoffs.
 The uTPI design is model-assisted in nature, which simply models the utility outcomes observed at the current dose level based on a quasi binomial likelihood.  Toxicity probability intervals are used to screen out overly toxic dose levels, and  then the dose escalation/de-escalation decisions are  made adaptively by comparing the posterior utility distributions of the adjacent levels of the current dose. The uTPI design is  flexible in accommodating various utility functions but it only needs minimum design parameters. A prominent feature of the uTPI design is that its dose-assignment decision table can be pre-calculated before the start of trial, which greatly simplifies  practical implementation of the design. 
+
 #Functions
 The repository includes two functions:
 * uTPI-sim-fixed.R: The R code that includes the function ```get.oc``` to conduct simulations and obtain the operating characteristics of the uTPI design under certain scenarios.
