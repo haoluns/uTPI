@@ -9,7 +9,7 @@ The repository includes three functions:
 ```rscript
 get.oc(targetE,targetT, pE.true,pT.true,u1,u2,ncohort, cohortsize,cutoff.eliT, cutoff.eliE, nstar,ntrial)
 ```
-* uTPI-decisiontable.R: The R code that includes the function ```get.decision.table``` to generate the decision table for selecting the next dose level for the new patents by the uTPI design..
+* uTPI-decisiontable.R: The R code that includes the function ```get.decision.table``` to generate the decision table for selecting the next dose level for the new patents by the uTPI design.
 ```rscipt
 get.decision.table(u1,u2,targetE,targetT,cutoff.eliE,cutoff.eliT,nstar)
 ```
@@ -27,7 +27,7 @@ get.decision.table(u1,u2,targetE,targetT,cutoff.eliE,cutoff.eliT,nstar)
 * ```cutoff.eliT```: The probability cutoff cutoff for eliminating over-toxic doses, e.g., ```cutoff.eliT<-0.95```.
 * ```cutoff.eliE```: The probability cutoff cutoff for eliminating futile doses, e.g., ```cutoff.eliE<-0.9```.
 * ```nstar```: The cutoff sample size for aggresive dose exploration, as a default, ```nstar<-9```.
-* ```ntrial```: Number of replicated trials in the simulation, e.g., ```ntrial<-10000```..
+* ```ntrial```: Number of replicated trials in the simulation, e.g., ```ntrial<-10000```.
 
 
 #Example
@@ -72,7 +72,7 @@ oc=get.oc(targetE,targetT, pE.true,pT.true,u1,u2, ncohort, cohortsize, cutoff.el
 print(oc)
 
 -----------------------output------------------------
-The selection percentages of all the doses are "
+The selection percentages of all the doses are 
 50 30  0  0  0
 The average number of patients allocated at all the doses are 14.1
 The average number of patients allocated at all the doses are 12.9
